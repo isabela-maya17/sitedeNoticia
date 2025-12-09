@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portal Notícias — Início</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="noticia.html">
+    <link rel="stylesheet" href="contato.html">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <header id="header" class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">Portal<span class="logoaccent">News</span></a>
+            <nav id="menu" class="nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="noticia.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="menu" id="menu-toggle">☰</button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Portal de Notícias</h1>
+                <p class="hero-sub">Notícias, análises e reportagens com layout limpo
+                    e responsivo.</p>
+            </div>
+        </section>
+        <section class="container grid" aria-label="Principais notícias">
+            <article class="card">
+
+                <img src="../assets/img/TECNOLOGIA.jpg"
+                    alt="https://ravel.com.br/blog/wp-content/uploads/2023/02/Tendencias-de-tecnologia-2023-Capa.jpg" class="
+                    cardimg">
+                <div class="card-body">
+                    <h2 class="card-title">Tecnologia</h2>
+                    <p class="card-text">Plataforma brasileira de IA começa a ser testada em escolas públicas para
+                        ajudar alunos a estudar e organizar tarefas
+                    </p>
+                    <a class="btn" href="noticia.html">Ler mais</a>
+                </div>
+            </article>
+            <article class="card">
+                <img src="../assets/img/CIDADE.jpg"
+                    alt="2wCEAAkGBxITEhUTExMVFRUVGBYVFhcWGBUXFhUVFRUWGBUXFhoYHiggGBolHhcVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy8lHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf"
+                    class="cardimg">
+                <div class="card-body">
+                    <h2 class="card-title">Cidades</h2>
+                    <p class="card-text">Novo parque urbano está quase pronto e deve ser inaugurado no início de 2026,
+                        trazendo áreas verdes e lazer.</p>
+                    <a class="btn"
+                        href="">Ler mais</a>
+                </div>
+            </article>
+            <article class="card">
+                <img src="../assets/img/ESPORTE.jpg"
+                    alt="2wCEAAkGBxITEhUSEhMWFhUXFhoXGBcXGB0XGxceGhcXHRgbGh0ZHSggGCAlHRsYITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGDUmHyYrLS0tLS0tLS0tLS0vLS0tLS0tLS0tLS0tLS0tLS0tLS8tLS0tLS0tLS0tLS0tLS0tLf"
+                    class="cardimg">
+                <div class="card-body">
+                    <h2 class="card-title">Esporte</h2>
+                    <p class="card-text">Time juvenil de vôlei garante vaga inédita na final estadual após vitória por 3
+                        sets a 1.</p>
+                    <a class="btn"
+                        href="A equipe juvenil de vôlei da cidade venceu ontem a semifinal do Campeonato Estadual, garantindo vaga inédita na grande final. O jogo foi marcado por pontos disputados e uma virada impressionante no segundo set. O treinador destacou o comprometimento dos atletas e afirmou que o grupo está confiante para buscar o título. A final acontece no próximo domingo, com transmissão online.">Ler
+                        mais</a>
+                </div>
+            </article>
+        </section>
+            </ul>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2025 PortalNews — Todos os direitos reservados</p>
+            <nav>
+                <a href="contato.html">Contato</a> · <a href="#">Política de
+                    privacidade</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle do menu para telas pequenas
+        const btn = document.getElementById('menu-toggle');
+        const nav = document.getElementById('menu');
+        btn.addEventListener('click', () => {
+            const expanded = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', String(!expanded));
+            nav.classList.toggle('open');
+        });
+    </script>
+</body>
+
+</html>
